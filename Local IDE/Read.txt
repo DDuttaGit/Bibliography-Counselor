@@ -1,0 +1,54 @@
+This is a naive prototype of a Local LaTeX editor
+
+Requirements:
+    1. a. Python package: PySide2, bs4, bibtexparser
+       b. LaTeX compiler: pdflatex
+       
+Launch:
+    $ python IDE.py
+    
+IDE:
+    Specs:
+        A. Code Editor 
+        B. Terminal type Pane at BottomRight 
+        C. Citation Suggesion Pane at Top Right
+        D. Button Set
+    
+    Events:
+        1. Ctrl+S to save the written file in the editor
+        2. Ctrl+Shift+C or the Run Button to Compile. Output at Terminal type Pane
+        3. Select a valid text portion and Ctrl+Space to Get suggesion from Libraries. Output at Citation Suggesion
+        4. Ctrl+O to open a .tex file
+
+    Bugs & Todo:
+        Tons of Bugs.
+        a. Relative positioninfg of panes                                   ✓
+        b. No Open Call implemented till now so as a .Tex file can be opened ✓
+        c. Exact bib format has yet not been created in Backend             ✓
+        d. User Preference for libraries has yet not been created from frontend
+        e. Try to highlight the LaTeX code as in an IDE
+    
+    To Start:
+        1. Just copy the below Sample Tex
+        2. Either Ctrl+Shift+C to directly save and compile
+        3. Select a valid text within the editor and press Ctrl+Space. Wait for a min at least to get sugessions at CCitation Suggestion pane.
+        
+
+
+
+Sample Tex here
+
+\documentclass{article}
+
+\title{Test}
+\author{admin }
+\date{May 2022}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+Wordnet Query Expansion
+
+\end{document}
