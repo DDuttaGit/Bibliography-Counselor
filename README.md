@@ -1,4 +1,4 @@
-# Bibliography Counselor ![64_2](https://user-images.githubusercontent.com/52165986/219767360-be2c9514-b8b9-4040-82e2-2b73d2546168.png)
+# Bibliography Counselor ![64_2](https://user-images.githubusercontent.com/52165986/219769891-905512cd-dfd0-4502-98ec-4f3e6daa7a5d.png)
 
 
 _A Bibliographic Citation Recommendation System integrated with [Overleaf](https://www.overleaf.com)_
