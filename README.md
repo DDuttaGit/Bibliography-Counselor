@@ -12,8 +12,8 @@ This tool comes up with two front-end systems viz. a cross-browser extension and
 
 - Works seemlessly with Overleaf editor when the editor is ___Not___ in **Rich Text** mode.
 - Chromium based extension is buit on _manifest version 3_ and [Gecko based extension](https://addons.mozilla.org/en-US/firefox/addon/bibliography-counselor/) has been deployed in manifest version 2 as gecko driver is still not that stable to manifest version 3.
--- Directory [Chromium Based Extension](https://github.com/DDuttaGit/Bibliography-Counselor/tree/main/Chromium%20Based%20Extension) provides the implementation for browsers like Google Chrome, Brave etc.
--- Likewise, [Gecko Based Extension](https://github.com/DDuttaGit/Bibliography-Counselor/tree/main/Gecko%20Based%20Extension) provides the implementation for browsers like Firefox.
+    * Directory [Chromium Based Extension](https://github.com/DDuttaGit/Bibliography-Counselor/tree/main/Chromium%20Based%20Extension) provides the implementation for browsers like Google Chrome, Brave etc.
+    * Likewise, [Gecko Based Extension](https://github.com/DDuttaGit/Bibliography-Counselor/tree/main/Gecko%20Based%20Extension) provides the implementation for browsers like Firefox.
 - Real-Time bibliography citation recommendation whre the pool of relevent documents are being collected from [ACM Digital Library](https://dl.acm.org/), [IEEE Xplore](https://ieeexplore.ieee.org/), [Semantic Scholar](https://www.semanticscholar.org/), [Crossref](https://www.crossref.org/) and [DBLP](https://dblp.org/).
 - Uses *Borda Count* based positional voting for relevence calculation.
 - On-screen recommendation and auto-population of bibliography items and citations to proper place.
@@ -52,7 +52,7 @@ __Q__ →  ⟨an excerpt⟩ \` \$\$\$\$\$ '  ⟨Referrd bib key(s)⟩
 
 __B__  →  ⟨Bibliography Record⟩ | ⟨Bibliography Record⟩__B__
 </div>
-where, __Id__ refer to an unique identity assigned to that record.
+where _Id_ refer to an unique identity assigned to that record.
 
 
 The evaluation is done in two environments viz.
