@@ -1,4 +1,6 @@
-# Bibliography Counselor
+# Bibliography Counselor ![64_2](https://user-images.githubusercontent.com/52165986/219767360-be2c9514-b8b9-4040-82e2-2b73d2546168.png)
+
+
 _A Bibliographic Citation Recommendation System integrated with [Overleaf](https://www.overleaf.com)_
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/DDuttaGit/OverleafCounselor/README.md)
@@ -15,7 +17,7 @@ This tool comes up with two front-end systems viz. a cross-browser extension and
     * Directory [Chromium Based Extension](https://github.com/DDuttaGit/Bibliography-Counselor/tree/main/Chromium%20Based%20Extension) provides the implementation for browsers like Google Chrome, Brave etc.
     * Likewise, [Gecko Based Extension](https://github.com/DDuttaGit/Bibliography-Counselor/tree/main/Gecko%20Based%20Extension) provides the implementation for browsers like Firefox.
 - Real-Time bibliography citation recommendation whre the pool of relevent documents are being collected from [ACM Digital Library](https://dl.acm.org/), [IEEE Xplore](https://ieeexplore.ieee.org/), [Semantic Scholar](https://www.semanticscholar.org/), [Crossref](https://www.crossref.org/) and [DBLP](https://dblp.org/).
-- Uses *Borda Count* based positional voting for relevence calculation.
+- Uses **Borda Count** based positional voting for relevence calculation.
 - On-screen recommendation and auto-population of bibliography items and citations to proper place.
 - User can have the choice to alter preference.
 - Keyboard Shortcut <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> and <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>U</kbd> are present to invoke the extension in chromium based and gecko based browsers respectively.
