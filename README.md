@@ -28,7 +28,7 @@ This tool comes up with two front-end systems viz. a cross-browser extension and
 4. After waiting for the recommendations to be fetched, select the items of ones choice.
 5. Let the tool automatically copy your choices to the `*.bib` file and the bibliography citation keys after the selected text within the `\cite` command.
 
-### Video demonstration workflow in Brave browser
+### Video demonstrating workflow in Brave browser
 
 https://user-images.githubusercontent.com/52165986/219472699-f290b56d-e578-4ad6-ab49-ef6dbc60475a.mp4
 
@@ -74,5 +74,5 @@ We have used _Trec eval_, an evaluation software dedicated to IR (Information Re
 
 
 
-[^1]: Because of serving from [AWS free-tier hosted machine](http://13.233.129.4/homepage.html); it lacks SSL certificate. Thus it will be necesssary to tell modern browsers to 'Proceed to Unsafe' in case there occures a `NET::ERR_CERT_AUTHORITY_INVALID` error.
+[^1]: Because of serving from [AWS free-tier hosted machine](https://13.233.129.4/homepage.html); it lacks SSL certificate. Thus it will be necesssary to tell modern browsers to 'Proceed to Unsafe' in case there occures a `NET::ERR_CERT_AUTHORITY_INVALID` error.
 [^2]: To keep a record to whom this webserver is serving, during recommendation it saves (as it runs in a limited credit) some details of requester viz. Overleaf account name, email and number of requests.
