@@ -70,7 +70,7 @@ We have used _Trec eval_, an evaluation software dedicated to IR (Information Re
 |              All |         7         | 0.1014 |         11        | 0.1353 |
 |           ACM-DL |         4         | 0.0189 |         6         | 0.0254 |
 | Semantic Scholar |         8         | 0.0962 |         11        | 0.0475 |
-###### The Table shows the result when the our ground text file contains 37 queries which comprises 71 queries. The experiment has been done setting the top _K=5_ documents retrieved from each library while collecting top _k=7_ after ranking them using Weighted Borda Count. In addition to taking response from all  the digital libraries, we have also experimented separately on ACM-DL and Semantic Scholar.
+###### The Table shows the result when the our ground text file contains 37 records which comprises 71 queries. The experiment has been done setting the _top-K=5_ documents retrieved from each library while collecting _top-k=7_ after ranking them using Weighted Borda Count. In addition to taking response from all  the digital libraries, we have also experimented separately on ACM-DL and Semantic Scholar.
 
 
 
