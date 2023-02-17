@@ -6,23 +6,23 @@ _A Bibliographic Citation Recommendation System integrated with [Overleaf](https
 Citation Recommendation is to provide biographic citation that a user is intending to fetch corresponding to a search query. This task differs from paper recommendation where it recommends documents that are worthwhile to read and to investigate. Survey publications have the sole objective to satisfy paper recommendation. __Bibliography Counselor__ is such a recommendation system integrated with __Overleaf__.
 
 ## Technical Specifications
-This tool comes up with two front-end system viz. a cross-browser extension and a local IDE of which here we discuss about the work flow of the browser extension.
+This tool comes up with two front-end systems viz. a cross-browser extension and a PyQt based [local IDE](https://github.com/DDuttaGit/Bibliography-Counselor/tree/main/Local%20IDE) of which here we discuss about the work flow of the browser extension.
 
 ### Features
 
-- Works seemlessly with Overleaf editor when the editor mode is ___not___ in **Rich Text** mode.
+- Works seemlessly with Overleaf editor when the editor is ___Not___ in **Rich Text** mode.
 - Chromium based extension is buit on _manifest version 3_ and [Gecko based extension](https://addons.mozilla.org/en-US/firefox/addon/bibliography-counselor/) has been deployed in manifest version 2 as gecko driver is still not that stable to manifest version 3.
 -- Directory [Chromium Based Extension](https://github.com/DDuttaGit/Bibliography-Counselor/tree/main/Chromium%20Based%20Extension) provides the implementation for browsers like Google Chrome, Brave etc.
 -- Likewise, [Gecko Based Extension](https://github.com/DDuttaGit/Bibliography-Counselor/tree/main/Gecko%20Based%20Extension) provides the implementation for browsers like Firefox.
 - Real-Time bibliography citation recommendation whre the pool of relevent documents are being collected from [ACM Digital Library](https://dl.acm.org/), [IEEE Xplore](https://ieeexplore.ieee.org/), [Semantic Scholar](https://www.semanticscholar.org/), [Crossref](https://www.crossref.org/) and [DBLP](https://dblp.org/).
-- Uses Borda Count based positional voting for relevence calculation.
-- User can have the choice to alter preference.
-- Keyboard Shortcut <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> and <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>U</kbd> are present to invoke the extension in chromium based and gecko based browsers.
+- Uses *Borda Count* based positional voting for relevence calculation.
 - On-screen recommendation and auto-population of bibliography items and citations to proper place.
-- Online web [Server](https://github.com/DDuttaGit/Bibliography-Counselor/tree/main/Server) [^1]
+- User can have the choice to alter preference.
+- Keyboard Shortcut <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> and <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>U</kbd> are present to invoke the extension in chromium based and gecko based browsers respectively.
+- Online [Server](https://github.com/DDuttaGit/Bibliography-Counselor/tree/main/Server) [^1] [^2]
 
 ### How to Run
-1. After downloading the extensions, install the extension by enabling developer mode of the browser.
+1. After downloading the extension, install the extension by enabling developer mode in the browser.
 2. Either use _keyboard shrortcut_ or open the options by _right click_ on the selected text in Overleaf editor.
 3. Make preferences corresponding to each library.
 4. After waiting for the recommendations to be fetched, select the items of ones choice.
@@ -44,9 +44,9 @@ Our collection of queries comprises the excepts from the source files `*.tex` an
 
 __R__ → _Id_ \`\n' __S__
 
-__S__ → __QS_1B__
+__S__ → __QS<sub>1</sub>B__
 
-__S_1__ → __QS_1B__  |  \`\n'
+__S<sub>1</sub>__ → __QS<sub>1</sub>B__  |  \`\n'
 
 __Q__ →  ⟨an excerpt⟩ \` \$\$\$\$\$ '  ⟨Referrd bib key(s)⟩
 
@@ -57,8 +57,7 @@ where, __Id__ refer to an unique identity assigned to that record.
 
 The evaluation is done in two environments viz.
 1. __Strict Equality__: As the name of Strict Equality implies if elements from set of retrieved documents is exactly identical to the document that has been cited by the author corresponding to that query then we term it as strict equality condition.
-2. __Loose Equality__: However, we found instances where the cited document may not be retrieved by our backend query processor, but a significantly related document has been reported. By significantly related we mean the intersection between words of the title of a relevant and retrieved document is grater than a predefined threshold. % In such a case we have also reduced the score of the retried document by a function dependent on the the intersection of words in the title of that retrieved document and the relevant document.
-\end{enumerate}
+2. __Loose Equality__: However, we found instances where the cited document may not be retrieved by our backend query processor, but a significantly related document has been reported. By significantly related we mean the intersection between words of the title of a relevant and retrieved document is grater than a predefined threshold. In such a case we have also reduced the score of the retried document by a function dependent on the the intersection of words in the title of that retrieved document and the relevant document.
 
 We have used _Trec eval_, an evaluation software dedicated to IR (Information Retrieval) system, to evaluate our results with the ground truth. 
 
@@ -72,4 +71,5 @@ We have used _Trec eval_, an evaluation software dedicated to IR (Information Re
 
 
 
-[^1]: Because of serving from [AWS free-tier hosted machine](http://13.233.129.4/homepage.html); it lacks SSL certificate. Thus it will be necesssary to tell modern browsers to 'Proceed to Unsafe' in case there occures a `NET::ERR_CERT_AUTHORITY_INVALID`
+[^1]: Because of serving from [AWS free-tier hosted machine](http://13.233.129.4/homepage.html); it lacks SSL certificate. Thus it will be necesssary to tell modern browsers to 'Proceed to Unsafe' in case there occures a `NET::ERR_CERT_AUTHORITY_INVALID` error.
+[^2]: To keep a record to whom this webserver is serving, during recommendation it saves (as it runs in a limited credit) some details of requester viz. Overleaf account name, email and number of requests.
