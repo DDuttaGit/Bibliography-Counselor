@@ -5,7 +5,7 @@ _A Bibliographic Citation Recommendation System integrated with [Overleaf](https
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/DDuttaGit/OverleafCounselor/README.md)
 
-Citation Recommendation is to provide biographic citation that a user is intending to fetch corresponding to a search query. This task differs from paper recommendation where it recommends documents that are worthwhile to read and to investigate. Survey publications have the sole objective to satisfy paper recommendation. __Bibliography Counselor__ is such a recommendation system integrated with __Overleaf__.
+Citation Recommendation is to provide bibliographic citation that a user is intending to fetch corresponding to a search query. This task differs from paper recommendation where it recommends documents that are worthwhile to read and to investigate. Survey publications have the sole objective to satisfy paper recommendation. __Bibliography Counselor__ is such a recommendation system integrated with __Overleaf__.
 
 ## Technical Specifications
 This tool comes up with two front-end systems viz. a cross-browser extension and a PyQt based [local IDE](https://github.com/DDuttaGit/Bibliography-Counselor/tree/main/Local%20IDE) of which here we discuss about the work flow of the browser extension.
@@ -14,20 +14,20 @@ This tool comes up with two front-end systems viz. a cross-browser extension and
 
 - Works seemlessly with Overleaf editor when the editor is ___Not___ in **Rich Text** mode.
 - Chromium based extension is buit on _manifest version 3_ and [Gecko based extension](https://addons.mozilla.org/en-US/firefox/addon/bibliography-counselor/) has been deployed in manifest version 2 as gecko driver is still not that stable to manifest version 3.
-    * Directory [Chromium Based Extension](https://github.com/DDuttaGit/Bibliography-Counselor/tree/main/Chromium%20Based%20Extension) provides the implementation for browsers like Google Chrome, Brave etc.
+    * Directory [Chromium Based Extension](https://github.com/DDuttaGit/Bibliography-Counselor/tree/main/Chromium%20Based%20Extension) provides the implementation for browsers like Google Chrome, Brave, Microsoft Edge etc.
     * Likewise, [Gecko Based Extension](https://github.com/DDuttaGit/Bibliography-Counselor/tree/main/Gecko%20Based%20Extension) provides the implementation for browsers like Firefox.
 - Real-Time bibliography citation recommendation whre the pool of relevent documents are being collected from [ACM Digital Library](https://dl.acm.org/), [IEEE Xplore](https://ieeexplore.ieee.org/), [Semantic Scholar](https://www.semanticscholar.org/), [Crossref](https://www.crossref.org/) and [DBLP](https://dblp.org/).
 - Uses **Borda Count** based positional voting for relevence calculation.
-- On-screen recommendation and auto-population of bibliography items and citations to proper place.
-- User can have the choice to alter preference.
+- **On-screen recommendation*" and **auto-population** of bibliography items and citations to proper place.
+- User can have the choice to alter preferences.
 - Keyboard Shortcut <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> and <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>U</kbd> are present to invoke the extension in chromium based and gecko based browsers respectively.
 - Online [Server](https://github.com/DDuttaGit/Bibliography-Counselor/tree/main/Server) [^1] [^2]
 
 ### How to Run
 1. After downloading the extension, install the extension by enabling developer mode in the browser.
 2. Either use _keyboard shrortcut_ or open the options by _right click_ on the selected text in Overleaf editor.
-3. Make preferences corresponding to each library.
-4. After waiting for the recommendations to be fetched, select the items of ones choice.
+3. Make preferences corresponding to each digital library.
+4. Once the recommendations are fetched, select the items of ones choice.
 5. Let the tool automatically copy your choices to the `*.bib` file and the bibliography citation keys after the selected text within the `\cite` command.
 
 ### Video demonstrating workflow in Brave browser
@@ -44,7 +44,7 @@ https://user-images.githubusercontent.com/52165986/219472699-f290b56d-e578-4ad6-
 ## Experimental Result
 We have done our experiment and evaluated it on a self-deployed dataset. The experiment stems on online real time retrieval for which the results stated here may vary time-to-time depending upon the indexing of results in digital libraries over time.
 
-Our collection of queries comprises the excepts from the source files `*.tex` and `*.bib` submitted as [arXiv](https://arxiv.org/) pre-print. The format of a single record ___R___:
+Our collection of queries comprises the excerpts from the source files `*.tex` and `*.bib` submitted as [arXiv](https://arxiv.org/) pre-print. The format of a single record ___R___:
 <div align='center'>
 
 __R__ → _Id_ \`\n' __S__
@@ -57,7 +57,7 @@ __Q__ →  ⟨an excerpt⟩ \` \$\$\$\$\$ '  ⟨Referrd bib key(s)⟩
 
 __B__  →  ⟨Bibliography Record⟩ | ⟨Bibliography Record⟩__B__
 </div>
-where _Id_ refer to an unique identity assigned to that record.
+where <i>Id</i> refer to an unique identity assigned to that record.
 
 
 The evaluation is done in two environments viz.
@@ -72,7 +72,7 @@ We have used _Trec eval_, an evaluation software dedicated to IR (Information Re
 |              All |         7         | 0.1014 |         11        | 0.1353 |
 |           ACM-DL |         4         | 0.0189 |         6         | 0.0254 |
 | Semantic Scholar |         8         | 0.0962 |         11        | 0.0475 |
-###### The Table shows the result when the our ground text file contains 37 records which comprises 71 queries. The experiment has been done setting the _top-K=5_ documents retrieved from each library while collecting _top-k=7_ after ranking them using Weighted Borda Count. In addition to taking response from all  the digital libraries, we have also experimented separately on ACM-DL and Semantic Scholar.
+###### This table shows the result when our ground-truth text file contains 37 records __R__ which comprises 71 queries __Q__. The experiment has been done setting the _top-K_ = 5 documents retrieved from each library while collecting _top-k_ = 7 after ranking them using Weighted Borda Count. In addition to taking response from all  the digital libraries, we have also experimented separately on ACM-DL and Semantic Scholar.
 
 
 
