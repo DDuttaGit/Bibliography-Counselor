@@ -61,7 +61,7 @@ where <i>Id</i> refer to an unique identity assigned to that record.
 
 
 The evaluation is done in two environments viz.
-1. __Strict Equality__: As the name of Strict Equality implies if elements from set of retrieved documents is exactly identical to the document that has been cited by the author corresponding to that query then we term it as strict equality condition.
+1. __Strict Equality__: If retrieved document(s) is(are) exactly identical to the document(s) that has been cited by the author corresponding to that query then we term it as strict equality condition.
 2. __Loose Equality__: However, we found instances where the cited document may not be retrieved by our backend query processor, but a significantly related document has been reported. By significantly related we mean the intersection between words of the title of a relevant and retrieved document is grater than a predefined threshold. In such a case we have also reduced the score of the retried document by a function dependent on the the intersection of words in the title of that retrieved document and the relevant document.
 
 We have used _Trec eval_, an evaluation software dedicated to IR (Information Retrieval) system, to evaluate our results with the ground truth. 
