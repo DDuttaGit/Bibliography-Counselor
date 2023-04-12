@@ -3,7 +3,7 @@
 
 _A Bibliographic Citation Recommendation System integrated with [Overleaf](https://www.overleaf.com)_
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/DDuttaGit/OverleafCounselor/README.md)
+[![Build - Passing](https://img.shields.io/badge/Build-Passing-2ea44f)](https://github.com/DDuttaGit/Bibliography-Counselor/README.md) [![Extension - Chomium](https://img.shields.io/static/v1?label=Extension&message=Chomium&color=fa119f&logo=Google+Chrome)](https://) [![Extension - Gecko](https://img.shields.io/badge/Extension-Gecko-aeb44f?logo=Firefox)](https://addons.mozilla.org/en-US/firefox/addon/bibliography-counselor/)
 
 Citation Recommendation is to provide bibliographic citation that a user is intending to fetch corresponding to a search query. This task differs from paper recommendation where it recommends documents that are worthwhile to read and to investigate. Survey publications have the sole objective to satisfy paper recommendation. __Bibliography Counselor__ is such a recommendation system integrated with __Overleaf__.
 
