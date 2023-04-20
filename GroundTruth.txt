@@ -1,0 +1,325 @@
+IR1
+alternative to pointwise graded relevance judgments for the offline evaluation of information retrieval systems $$$$$ q_2204.10362_1 $$$$$ cbcd08,cvs21,sz20,xie20,hb17a,rcmd22
+employ preference judgments to isolate only the best items, measuring rankers by their ability to $$$$$ q_2204.10362_2 $$$$$ avyc21
+
+@article{avyc21,
+  author = {Negar Arabzadeh and Alexandra Vtyurina and Xinyi Yan and Charles L. A. Clarke},
+  title = {Shallow pooling for sparse labels}}
+@techreport{cbcd08,
+  author = {Ben Carterette and Paul N. Bennett and David Maxwell Chickering and Susan T. Dumais},
+  title = {Here or there: {P}reference Judgments for Relevance}}
+@article{cvs21,
+  author={Charles L. A. Clarke and Alexandra Vtyurina and Mark D. Smucker},
+  title={Assessing top-$k$ preferences}}
+@inproceedings{sz20,
+  author = {Sakai, Tetsuya and Zeng, Zhaohao},
+  title = {Good evaluation measures based on document preferences}}
+@inproceedings{xie20,
+  author = {Xiaohui Xie and Jiaxin Mao and Yiqun Liu and Maarten de Rijke and Haitian Chen and Min Zhang and Shaoping Ma},
+    title = {Preference-based evaluation metrics for web image search}}
+@inproceedings{hb17a,
+  author = {Kai Hui and Klaus Berberich},
+  title = {Low-cost preference judgment via ties}}
+@inproceedings{rcmd22,
+  author = {Kevin Roitero and Alessandro Checco and Stefano Mizzaro and Gianluca Demartini},
+  title = {Preferences on a budget: {P}rioritizing document pairs when crowdsourcing relevance judgments}}
+
+
+IR2
+documents, giving all participants the same starting point. The 100 were retrieved using Indri $$$$$ q_2003.07820_1 $$$$$ strohman2005indri
+a common scenario in many real-world retrieval systems that employ a telescoping architecture $$$$$ q_2003.07820_2 $$$$$ matveeva2006high, wang2011cascade
+
+@inproceedings{strohman2005indri,
+  title={Indri: A language model-based search engine for complex queries},
+  author={Strohman, Trevor and Metzler, Donald and Turtle, Howard and Croft, W Bruce}}
+@inproceedings{matveeva2006high,
+  title={High accuracy retrieval with multiple nested ranker},
+  author={Matveeva, Irina and Burges, Chris and Burkard, Timo and Laucius, Andy and Wong, Leon}}
+@inproceedings{wang2011cascade,
+  title={A cascade ranking model for efficient ranked retrieval},
+  author={Wang, Lidan and Lin, Jimmy and Metzler, Donald}}
+
+
+IR3
+small window of terms and a limited memory size for a scalable co-occurrence count $$$$$ q_2007.08709_1 $$$$$ goyal2011approximate
+the starting point of counting and examine the seed's co-occurring terms $$$$$ q_2007.08709_2 $$$$$ buzydlowski2002coanalysis
+
+@inproceedings{goyal2011approximate,
+	title={Approximate {S}calable {B}ounded {S}pace {S}ketch for {L}arge {D}ata {NLP}},
+	author={Goyal, Amit and Daum{\'e} III, Hal}}
+@incollection{buzydlowski2002coanalysis,
+	title={Term {C}o-{O}ccurrence {A}nalysis as an {I}nterface for {D}igital {L}ibraries},
+	author={Buzydlowski, Jan W and White, Howard D and Lin, Xia}}
+
+
+IR/ML1
+scalability, making it possible to curate personalized recommendations from billions of items within milliseconds $$$$$ q_2205.15436_1 $$$$$ ma2020off
+Our proposed threshold selection rules are inspired by distribution-free uncertainty quantification methods $$$$$ q_2205.15436_2 $$$$$ gupta2020distribution
+
+@inproceedings{gupta2020distribution,
+  title={Distribution-free binary classification: prediction sets, confidence intervals and calibration},
+  author={Gupta, Chirag and Podkopaev, Aleksandr and Ramdas, Aaditya}}
+@inproceedings{ma2020off,
+  title={Off-policy learning in two-stage recommender systems},
+  author={Ma, Jiaqi and Zhao, Zhe and Yi, Xinyang and Yang, Ji and Chen, Minmin and Tang, Jiaxi and Hong, Lichan and Chi, Ed H}}
+
+
+IR/ML2
+These have also shown good generalization capabilities -- w.r.t. either effectiveness $$$$$ q_2205.04733_1 $$$$$ beir_2021
+Traditional IR systems like BM25 have dominated search engines for decades $$$$$ q_2205.04733_2 $$$$$ books/aw/Baeza-YatesR99
+
+@article{beir_2021,
+  author    = {Nandan Thakur and Nils Reimers and Andreas R{\"{u}}ckl{\'{e}} and Abhishek Srivastava and Iryna Gurevych},
+  title     = {{BEIR:} {A} Heterogenous Benchmark for Zero-shot Evaluation of Information Retrieval Models}}
+@book{books/aw/Baeza-YatesR99,
+  author = {Baeza-Yates, Ricardo A. and Ribeiro-Neto, Berthier A.},
+  title = {Modern Information Retrieval}}
+
+
+IR/ML3
+the models to be of potential clinical use due to methodological flaws and/or underlying biases $$$$$ q_2109.0.2752_1 $$$$$ roberts2021common
+a large number of trainable parameters that allow for a large space of admissible functions $$$$$ q_2109.0.2752_2 $$$$$ mello2018machine
+
+@book{mello2018machine,
+  title={Machine learning: a practical approach on the statistical learning theory},
+  author={Mello, Rodrigo F and Ponti, Moacir Antonelli}}
+@article{roberts2021common,
+  title={Common pitfalls and recommendations for using machine learning to detect and prognosticate for COVID-19 using chest radiographs and CT scans},
+  author={Roberts, Michael and Driggs, Derek and Thorpe, Matthew and Gilbey, Julian and Yeung, Michael and Ursprung, Stephan and Aviles-Rivero, Angelica I and Etmann, Christian and McCague, Cathal and Beer, Lucian and others}}
+
+
+ML1
+the present work Other attacks and defenses in FL are covered in this comprehensive surveys $$$$$ q_2205.11765_1 $$$$$ kairouz2019advances
+Client Privacy Leakage and Mitigation Inference attacks against centralized learning $$$$$ q_2205.11765_2 $$$$$ shokri2017membership
+
+@article{kairouz2019advances,
+  title={Advances and open problems in federated learning},
+  author={Kairouz, Peter and McMahan, H Brendan and Avent, Brendan and Bellet, Aur{\'e}lien and Bennis, Mehdi and Bhagoji, Arjun Nitin and Bonawitz, Keith and Charles, Zachary and Cormode, Graham and Cummings, Rachel and others}}
+@inproceedings{shokri2017membership,
+  title={Membership inference attacks against machine learning models},
+  author={Shokri, Reza and Stronati, Marco and Song, Congzheng and Shmatikov, Vitaly}}
+
+
+ML2
+models to detect fallacious logical structures history of logic $$$$$ q_2202.13758_1 $$$$$ russell2013history
+is to move from contents to symbols, based on which Aristotle develops a system of rules $$$$$ q_2202.13758_2 $$$$$ gabbay2004handbook
+
+@book{russell2013history,
+  title={History of western philosophy: Collectors edition},
+  author={Russell, Bertrand}}
+@book{gabbay2004handbook,
+  title={Handbook of the History of Logic},
+  author={Gabbay, Dov M and Woods, John Hayden}}
+
+
+ML3
+setting similar to theirs. In the source domain, we could use an existing rich-observation approach $$$$$ q_2205.14237_1 $$$$$ misra2020kinematic
+Our algorithm solves these challenges, building on prior work on learning from such observations $$$$$ q_2205.14237_2 $$$$$ krishnamurthy2016pac,jiang2017contextual
+
+@inproceedings{misra2020kinematic,
+  title={Kinematic state abstraction and provably efficient rich-observation reinforcement learning},
+  author={Misra, Dipendra and Henaff, Mikael and Krishnamurthy, Akshay and Langford, John}}
+@article{krishnamurthy2016pac,
+  title={PAC reinforcement learning with rich observations},
+  author={Krishnamurthy, Akshay and Agarwal, Alekh and Langford, John}}
+@inproceedings{jiang2017contextual,
+  title={Contextual decision processes with low bellman rank are pac-learnable},
+  author={Jiang, Nan and Krishnamurthy, Akshay and Agarwal, Alekh and Langford, John and Schapire, Robert E}}
+
+
+ML4
+While supervised learning has been the dominant approach to KWS model training, semi-supervised $$$$$ q_2204.06322_1 $$$$$ Oord2018RepresentationLW, Schneider2019wav2vecUP, Zhang2021BigSSLET
+More recently it has been explored in semi-supervised settings in ASR $$$$$ q_2204.06322_2 $$$$$ hwang2021large, han2020survey, song2020learning
+
+@article{Oord2018RepresentationLW,
+  title={Representation Learning with Contrastive Predictive Coding},
+  author={A{\"a}ron van den Oord and Yazhe Li and Oriol Vinyals}}
+@inproceedings{Schneider2019wav2vecUP,
+  title={wav2vec: Unsupervised Pre-training for Speech Recognition},
+  author={Steffen Schneider and Alexei Baevski and Ronan Collobert and Michael Auli}}
+@article{Zhang2021BigSSLET,
+  title={BigSSL: Exploring the Frontier of Large-Scale Semi-Supervised Learning for Automatic Speech Recognition},
+  author={Yu Zhang and Daniel S. Park and Wei Han and James Qin and Anmol Gulati and Joel Shor and Aren Jansen and Yuanzhong Xu and Yanping Huang and Shibo Wang and Zongwei Zhou and Bo Li and Min Ma and William Chan and Jiahui Yu and Yongqiang Wang and Liangliang Cao and Khe Chai Sim and Bhuvana Ramabhadran and Tara N. Sainath and Franccoise Beaufays and Zhifeng Chen and Quoc V. Le and Chung-Cheng Chiu and Ruoming Pang and Yonghui Wu}}
+@article{hwang2021large,
+  title={Large-scale ASR Domain Adaptation using Self-and Semi-supervised Learning},
+  author={Hwang, Dongseong and Misra, Ananya and Huo, Zhouyuan and Siddhartha, Nikhil and Garg, Shefali and Qiu, David and Sim, Khe Chai and Strohman, Trevor and Beaufays, Fran{\c{c}}oise and He, Yanzhang}}
+@article{han2020survey,
+  title={A survey of label-noise representation learning: Past, present and future},
+  author={Han, Bo and Yao, Quanming and Liu, Tongliang and Niu, Gang and Tsang, Ivor W and Kwok, James T and Sugiyama, Masashi}}
+@article{song2020learning,
+  title={Learning from noisy labels with deep neural networks: A survey},
+  author={Song, Hwanjun and Kim, Minseok and Park, Dongmin and Shin, Yooju and Lee, Jae-Gil}}
+
+
+TH1
+Equivalently, composing programs p and q results in a more complex program r (known as composite) $$$$$ q_2206.01694_1 $$$$$ arbab_reo_2004,achermann_calculus_2005,lau_introduction_2017,arellanes_evaluating_2020
+and produces an output. Functions that can be computed by Turing Machines are called computable $$$$$ q_2206.01694_2 $$$$$ turing_computable_1937
+
+@article{arbab_reo_2004,
+	title = {Reo: a channel-based coordination model for component composition},
+	author = {Arbab, Farhad}}
+@article{achermann_calculus_2005,
+	title = {A calculus for reasoning about software composition},
+	author = {Achermann, Franz and Nierstrasz, Oscar}}
+@book{lau_introduction_2017,
+	title = {An {Introduction} to {Component}-based {Software} {Development}},
+	author = {Lau, Kung-Kiu and Di Cola, Simone}}
+@article{arellanes_evaluating_2020,
+	title = {Evaluating {IoT} service composition mechanisms for the scalability of {IoT} systems},
+	author = {Arellanes, Damian and Lau, Kung-Kiu}}
+@article{turing_computable_1937,
+	title = {On {Computable} {Numbers}, with an {Application} to the {Entscheidungsproblem}},
+	author = {Turing, A. M.}}
+
+
+ML5
+complete verification using mixed-integer programming Neural network verification $$$$$ q_2010.11645_1 $$$$$ katz2017reluplex,elhersplanet,tjeng2018evaluating,bunel2018unified,anderson2020strong
+demands of large-scale SDPs motivate First-order SDP solvers $$$$$ q_2010.11645_2 $$$$$ nesterov2007smoothing,lan2011primal,d2014stochastic
+Convex relaxation based methods linear programming (LP) or similar relaxations for neural-network verification $$$$$ q_2010.11645_3 $$$$$ kolter2017provable, dvijotham2018dual
+
+@inproceedings{katz2017reluplex,
+    title={Reluplex: An efficient SMT solver for verifying deep neural networks},
+    author={Katz, Guy and Barrett, Clark and Dill, David L and Julian, Kyle and Kochenderfer, Mykel J}}
+@inproceedings{elhersplanet,
+author="Ehlers, R{\"u}diger",
+title="Formal Verification of Piece-Wise Linear Feed-Forward Neural Networks"}
+@inproceedings{tjeng2018evaluating,
+title={Evaluating Robustness of Neural Networks with Mixed Integer Programming},
+author={Vincent Tjeng and Kai Y. Xiao and Russ Tedrake}}
+@inproceedings{bunel2018unified,
+    title={A unified view of piecewise linear neural network verification},
+    author={Bunel, Rudy R and Turkaslan, Ilker and Torr, Philip and Kohli, Pushmeet and Mudigonda, Pawan K}}
+@article{anderson2020strong,
+	title={Strong mixed-integer programming formulations for trained neural networks},
+	author={Anderson, Ross and Huchette, Joey and Ma, Will and Tjandraatmadja, Christian and Vielma, Juan Pablo}}
+@article{nesterov2007smoothing,
+  title={Smoothing technique and its applications in semidefinite optimization},
+  author={Nesterov, Yurii}}
+@article{lan2011primal,
+  title={Primal-dual first-order methods with $\textrm{O}(1/\epsilon$) iteration-complexity for cone programming},
+  author={Lan, Guanghui and Lu, Zhaosong and Monteiro, Renato DC}}
+@article{d2014stochastic,
+  title={A stochastic smoothing algorithm for semidefinite programming},
+  author={d'Aspremont, Alexandre and El Karoui, Noureddine}}
+@article{kolter2017provable,
+  title={Provable defenses against adversarial examples via the convex outer adversarial polytope},
+  author={Kolter, J Zico and Wong, Eric}}
+@article{dvijotham2018dual,
+  title={A dual approach to scalable verification of deep networks},
+  author={Dvijotham, Krishnamurthy and Stanforth, Robert and Gowal, Sven and Mann, Timothy and Kohli, Pushmeet}}
+
+
+ML6
+Adapting to new clinical deployment by retraining or developing the AI model from scratch with data from the new distribution $$$$$ q_2205.09723_1 $$$$$ condon2021replication,finlayson2020clinician,futoma2020myth
+use of self-supervised learning techniques in diverse applications across computer vision $$$$$ q_2205.09723_2 $$$$$ doersch2015unsupervised,doersch2017multi,gidaris2018unsupervised,pathak2016context,larsson2017colorization
+
+@article{condon2021replication,
+  title={Replication of an open-access deep learning system for screening mammography: Reduced performance mitigated by retraining on local data},
+  author={Condon, James John Joseph and Oakden-Rayner, Luke and Hall, Kelly A and Reintals, Michelle and Holmes, Andrew and Carneiro, Gustavo and Palmer, Lyle J}}
+@article{finlayson2020clinician,
+  title={The clinician and dataset shift in artificial intelligence},
+  author={Finlayson, Samuel G and Subbaswamy, Adarsh and Singh, Karandeep and Bowers, John and Kupke, Annabel and Zittrain, Jonathan and Kohane, Isaac S and Saria, Suchi}}
+@article{futoma2020myth,
+  title={The myth of generalisability in clinical research and machine learning in health care},
+  author={Futoma, Joseph and Simons, Morgan and Panch, Trishan and Doshi-Velez, Finale and Celi, Leo Anthony}}
+@inproceedings{larsson2017colorization,
+  title={Colorization as a proxy task for visual understanding},
+  author={Larsson, Gustav and Maire, Michael and Shakhnarovich, Gregory}}
+@inproceedings{pathak2016context,
+  title={Context encoders: Feature learning by inpainting},
+  author={Pathak, Deepak and Krahenbuhl, Philipp and Donahue, Jeff and Darrell, Trevor and Efros, Alexei A}}
+@article{gidaris2018unsupervised,
+  title={Unsupervised representation learning by predicting image rotations},
+  author={Gidaris, Spyros and Singh, Praveer and Komodakis, Nikos}}
+@inproceedings{doersch2015unsupervised,
+  title={Unsupervised visual representation learning by context prediction},
+  author={Doersch, Carl and Gupta, Abhinav and Efros, Alexei A}}
+@inproceedings{doersch2017multi,
+  title={Multi-task self-supervised visual learning},
+  author={Doersch, Carl and Zisserman, Andrew}}
+
+
+MM1
+end-to-end supervised approaches, unsupervised approaches have addressed term semantics by using dense word vectors $$$$$ q_2202.07376_1 $$$$$ GangulyRMJ15,kdrelm_DG,dg-cikm-we
+a BERT model $$$$$ q_2202.07376_2 $$$$$ devlin-etal-2019-bert
+ColBERT model was recently proposed $$$$$ q_2202.07376_3 $$$$$ colbert_sigir20
+Deep Relevance Matching Model $$$$$ q_2202.07376_4 $$$$$ drmm
+end-to-end LTR approaches $$$$$ q_2202.07376_5 $$$$$ knrm_SIGIR17,neural_rank_multi_doc_field_www-18
+
+@inproceedings{GangulyRMJ15,
+author = {Ganguly, Debasis and Roy, Dwaipayan and Mitra, Mandar and Jones, Gareth J.F.},
+title = {Word Embedding Based Generalized Language Model for Information Retrieval}}
+@inproceedings{kdrelm_DG,
+author = {Roy, Dwaipayan and Ganguly, Debasis and Mitra, Mandar and Jones, Gareth J.F.},
+title = {Word Vector Compositionality Based Relevance Feedback Using Kernel Density Estimation}}
+@inproceedings{dg-cikm-we,
+author    = {Dwaipayan Roy and
+           Debasis Ganguly and
+           Sumit Bhatia and
+           Srikanta Bedathur and
+           Mandar Mitra},
+title     = {Using Word Embeddings for Information Retrieval: How Collection and
+           Term Normalization Choices Affect Performance}}
+@inproceedings{devlin-etal-2019-bert,
+  author    = {Jacob Devlin and
+               Ming{-}Wei Chang and
+               Kenton Lee and
+               Kristina Toutanova},
+  title     = {{BERT:} Pre-training of Deep Bidirectional Transformers for Language Understanding}}
+@inbook{colbert_sigir20,
+author = {Khattab, Omar and Zaharia, Matei},
+title = {ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT}}
+@inproceedings{drmm,
+author = {Guo, Jiafeng and Fan, Yixing and Ai, Qingyao and Croft, W. Bruce},
+title = {A Deep Relevance Matching Model for Ad-Hoc Retrieval}}
+@inproceedings{knrm_SIGIR17,
+author = {Xiong, Chenyan and Dai, Zhuyun and Callan, Jamie and Liu, Zhiyuan and Power, Russell},
+title = {End-to-End Neural Ad-Hoc Ranking with Kernel Pooling}}
+@inproceedings{neural_rank_multi_doc_field_www-18,
+author = {Zamani, Hamed and Mitra, Bhaskar and Song, Xia and Craswell, Nick and Tiwary, Saurabh},
+title = {Neural Ranking Models with Multiple Document Fields}}
+
+
+MM2
+Buckley and Voorhees evaluation measures IR $$$$$ q_2202.06306_1 $$$$$ buckley_eval_stability
+reinforced neural models neural approaches results weak baselines $$$$$ q_2202.06306_2 $$$$$ neural_hype_sigforum,neural_hype_sigir19
+
+@inproceedings{buckley_eval_stability,
+author = {Buckley, Chris and Voorhees, Ellen M.},
+title = {Evaluating Evaluation Measure Stability}}
+@article{neural_hype_sigforum,
+author = {Lin, Jimmy},
+title = {The Neural Hype, Justified! A Recantation}}
+@inproceedings{neural_hype_sigir19,
+author = {Yang, Wei and Lu, Kuang and Yang, Peilin and Lin, Jimmy},
+title = {Critically Examining the "Neural Hype": Weak Baselines and the Additivity of Effectiveness Gains from Neural Ranking Models}}
+
+
+Tr
+machine translation $$$$$ q_1706.03762_1 $$$$$ bahdanau2014neural,cho2014learning,sutskever2014sequence
+recurrent language models and encoder-decoder $$$$$ q_1706.03762_2 $$$$$ luong2015effective,wu2016google
+ByteNet $$$$$ q_1706.03762_3 $$$$$ arxiv.1610.10099
+
+@misc{arxiv.1610.10099,
+  author = {Kalchbrenner, Nal and Espeholt, Lasse and Simonyan, Karen and Oord, Aaron van den and Graves, Alex and Kavukcuoglu, Koray},
+  title = {Neural Machine Translation in Linear Time}}
+@article{bahdanau2014neural,
+  title={Neural machine translation by jointly learning to align and translate},
+  author={Bahdanau, Dzmitry and Cho, Kyunghyun and Bengio, Yoshua}
+}
+@article{cho2014learning,
+  title={Learning phrase representations using RNN encoder-decoder for statistical machine translation},
+  author={Cho, Kyunghyun and Van Merri{\"e}nboer, Bart and Gulcehre, Caglar and Bahdanau, Dzmitry and Bougares, Fethi and Schwenk, Holger and Bengio, Yoshua}
+}
+@article{sutskever2014sequence,
+  title={Sequence to sequence learning with neural networks},
+  author={Sutskever, Ilya and Vinyals, Oriol and Le, Quoc V}
+}
+@article{luong2015effective,
+  title={Effective approaches to attention-based neural machine translation},
+  author={Luong, Minh-Thang and Pham, Hieu and Manning, Christopher D}
+}
+@article{wu2016google,
+  title={Google's neural machine translation system: Bridging the gap between human and machine translation},
+  author={Wu, Yonghui and Schuster, Mike and Chen, Zhifeng and Le, Quoc V and Norouzi, Mohammad and Macherey, Wolfgang and Krikun, Maxim and Cao, Yuan and Gao, Qin and Macherey, Klaus and others}
+}
