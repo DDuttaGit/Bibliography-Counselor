@@ -32,10 +32,10 @@ This tool comes up with two front-end systems viz. a cross-browser extension and
 
 ### Video demonstrating workflow in Brave browser
 
-https://user-images.githubusercontent.com/52165986/219472699-f290b56d-e578-4ad6-ab49-ef6dbc60475a.mp4
+<!-- https://user-images.githubusercontent.com/52165986/219472699-f290b56d-e578-4ad6-ab49-ef6dbc60475a.mp4 -->
 
 
-<!-- https://user-images.githubusercontent.com/52165986/219595267-43136366-1b93-4d30-ba25-bdc1e6a31a71.mp4-->
+https://user-images.githubusercontent.com/52165986/219595267-43136366-1b93-4d30-ba25-bdc1e6a31a71.mp4
 
 
   
